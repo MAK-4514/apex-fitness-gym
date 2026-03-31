@@ -175,6 +175,7 @@ input { font-family: inherit; }
 .hero-scroll-indicator span { font-size:11px; color:var(--text-muted); letter-spacing:2px; text-transform:uppercase; }
 
 @media(max-width:480px) {
+    .hero-content { padding-top: 100px; }
     .hero-stats { gap:20px; }
     .stat-divider { display:none; }
 }
@@ -250,7 +251,16 @@ input { font-family: inherit; }
     .ai-float-2 { left:5%; }
     .ai-float-3 { right:10%; }
 }
-@media(max-width:640px) { .ai-trainer { padding:80px 0; } }
+@media(max-width:640px) { 
+    .ai-trainer { padding:80px 0; } 
+    .ai-float-card { padding: 8px 12px; gap: 8px; border-radius: var(--radius-sm); }
+    .ai-float-card i { width: 16px; height: 16px; }
+    .afc-label { font-size: 10px; }
+    .afc-value { font-size: 15px; }
+    .ai-float-1 { top: 15%; right: -2%; }
+    .ai-float-2 { top: 50%; left: -2%; }
+    .ai-float-3 { bottom: 12%; right: -2%; }
+}
 
 /* ============================================
    Pricing Section
